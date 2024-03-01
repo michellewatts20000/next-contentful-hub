@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+$rem-base: 10px;
+
+html {
+	font-size: $rem-base
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'HyundaiHeadOffice', Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	overflow-x: hidden;
+	font-weight: 400;
+}
+
+p {
+	font-size: 1.6rem;
+	font-family: 'HyundaiHeadOffice', Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+
+.prose {
+	h2 {
+		font-size: 2.4rem;
+		font-family: 'HyundaiHeadOffice', Arial, Helvetica, sans-serif;
+		line-height: 1.5em;
+		font-weight: 700;
+	}
+	p {
+		padding-bottom: 0px;
+	}
+}
+
+.li-margin {
+	@apply mr-14;
+}
+
+
+.swiper-container {
+	@apply py-20 sm:pl-[240px]
+}
+
+.writing-mode {
+	writing-mode: vertical-lr;
+}
+
+.prose {
+	max-width: 100%;
+}
