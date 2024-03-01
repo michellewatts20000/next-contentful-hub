@@ -1,4 +1,3 @@
-import BrightcovePlayer from '@brightcove/react-player-loader'
 import './style.scss'
 
 const BrightcoveVideo = () => {

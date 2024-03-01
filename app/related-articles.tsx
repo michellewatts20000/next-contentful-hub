@@ -4,6 +4,25 @@ import DateComponent from './date'
 import CoverImage from './cover-image'
 import { Markdown } from '@/lib/markdown'
 
+interface Asset {
+	sys: {
+		id: string
+	}
+	url: string
+	description: string
+}
+
+interface AssetLink {
+	block: Asset[]
+}
+
+interface Content {
+	json: any
+	links: {
+		assets: AssetLink
+	}
+}
+
 function ArticlePreview({
 	title,
 	heroImage,
@@ -17,7 +36,7 @@ function ArticlePreview({
 	date: string
 	author: any
 	slug: string
-	summary: string
+	summary: Content
 }) {
 	return (
 		<div>
